@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <title>Final project</title> 
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/canvas.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/todo.css">
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="/assest/logo.png" alt="">
+                </span>
+                <div class="text logo-text">
+                    <span class="name">My Space</span>
+                    <span class="profession">Designer</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link dashboard-home">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Board</span>
+                        </a>
+                    </li>
+                    <li class="nav-link dashboard-todo">
+                        <a href="#">
+                            <i class='bx bx-list-ol icon' ></i>
+                            <span class="text nav-text">Todo</span>
+                        </a>
+                    </li>
+                    <li class="nav-link dashboard-sketch">
+                        <a href="#">
+                            <i class='bx bx-edit icon'></i>
+                            <span class="text nav-text">Canvas</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-content">           
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>               
+            </div>
+        </div>
+    </nav>
+
+    <section class="home" id="dashboard-home">
+        <div class = "side-content">
+            <div class="text">Welcome, AJ</div>
+            <span class="home-bg">
+                <img src="/assest/home.png" alt="">
+            </span> 
+            <div class="clock">
+                <div id="Date">Monday 26 September 2023</div>
+                <ul>
+                <li id="hours">05</li>
+                    <li id="point">:</li>
+                    <li id="min">20</li>
+                    <li id="point">:</li>
+                    <li id="sec">30</li>
+                </ul>
+                <a href="/assest/resume.pdf" download="resume.pdf">Download My CV</a>   
+            </div>   
+        </div>
+    </section>
+
+    <section class="todo" id="dashboard-todo">      
+            <div class="text">Todo list</div>
+            <form id="taskForm">
+                <label for="taskInput">Task:</label>
+                <input type="text" id="taskInput" class="text-inputs" required>
+    
+                <label for="descriptionInput">Description:</label>
+                <textarea id="descriptionInput" class="text-inputs"></textarea>
+    
+                <label for="dueDateInput">Due Date:</label>
+                <input type="date" id="dueDateInput" class="text-inputs">
+    
+                <label for="priorityInput">Priority:</label>
+                <select id="priorityInput" class="text-inputs">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+    
+                <button type="submit" id="submitButton">Add Task</button>
+            </form>
+            <div id="taskContainer"></div>        
+    </section>
+
+    <section class="sketch" id="dashboard-sketch">
+        <div class="text">My Canvas</div>
+        <div class="canvas-section">
+            <canvas id="canvas"></canvas>
+            <div class="canvas-tools">
+                <div class="drawing-method-buttons">
+                    <div> Shapes </div>
+                    <button id="circleButton" class="button">◯</button>
+                    <button id="triangleButton" class="button">△</button>
+                    <button id="squareButton" class="button">◻</button>
+                    <button id="pencilButton" class="button selected-button">✎</button>
+                </div>
+                <div class="shape-size-input">
+                    <div> Shape Size </div>
+                    <input type="range" id="shapeSizeInput" min="10" max="200" value="100">
+                </div>
+                <div class="color-input">
+                    <div> Color </div>
+                    <input type="color" id="colorPicker" value="#000000">
+                </div>
+                <div class="linewidth-input">
+                    <div> Line Width </div>   
+                    <input type="range" id="lineWidthInput" min="1" max="30" value="10">
+                </div>
+                <div class="reset">
+                    <div> Reset </div>
+                    <button id="resetButton" class="reset-button">↺</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/js/script.js"></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/todo.js"></script>
+    <script src="/js/canvas.js"></script>
+</body>
+</html>

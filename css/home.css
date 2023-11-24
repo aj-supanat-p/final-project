@@ -1,0 +1,64 @@
+.home {
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.clock{
+    color: white;
+    padding: 40px;
+    background-color: #222222;
+}
+#Date{
+    font-size: 20px !important;
+    padding-left: 20px;
+}
+.clock ul{
+    padding-left: 20px;
+    list-style: none;
+    display: flex;
+    font-size: 90px;
+    gap: 16px;
+}
+
+.home-bg {
+    display: flex;
+    overflow: hidden;
+    max-height: 265px;
+}
+
+.home-bg img {
+    width: 100%;
+    height: auto;
+}
+
+.home a {
+    display: inline-block;
+    position: absolute;
+    margin-left: 88%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative; 
+  }
+
+
+.home a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.home a:hover::before {
+    background-color: #FF5B37;
+}
+
+.home .text{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 24px 60px 24px 60px;
+}
+

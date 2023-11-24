@@ -1,0 +1,140 @@
+.canvas-section {
+    display: flex;
+    align-items: center;
+  }
+
+.canvas .text {    
+    padding: 24px 0px;
+}
+
+canvas {
+    margin: 40px 60px;
+  }
+
+.canvas-tools {
+    justify-content: center;
+    text-align: center;
+    max-width: 120px;
+}
+
+.canvas 
+.drawing-method-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape-size-input {
+  text-align: center;
+}
+
+.shape-size-input div {
+  margin-bottom: 16px; 
+}
+
+.linewidth-input div {
+  margin-bottom: 16px; 
+}
+
+.color-input {
+    text-align: center;
+  }
+
+#colorPicker {
+    width: 60px; 
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid white;
+  }
+
+.linewidth-input {
+    text-align: center;
+  }
+
+
+.reset {
+    text-align: center;
+  }
+
+#circleButton {
+    width: 60px; 
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid white;
+    font-size: 24px;
+}
+
+#triangleButton {
+  width: 60px; 
+  height: 60px;
+  border-radius: 8px;
+  border: 1px solid white;
+  font-size: 24px;
+}
+
+#squareButton {
+  width: 60px; 
+  height: 60px;
+  border-radius: 8px;
+  border: 1px solid white;
+  font-size: 24px;
+}
+
+#pencilButton {
+  width: 60px; 
+  height: 60px;
+  border-radius: 8px;
+  border: 1px solid white;
+  font-size: 24px;
+}
+
+
+#resetButton {
+    width: 60px; 
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid white;
+    font-size: 24px;
+}
+
+.reset-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  border: 1px solid white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+canvas {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 8px;
+    }
+  
+.canvas input, .canvas button {
+    margin: 10px;
+  }
+  
+  .button {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #FF5B37;
+  }
+  
+  .selected-button {
+    background-color: #FF5B37;
+  }
